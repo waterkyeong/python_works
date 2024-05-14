@@ -3,7 +3,7 @@ def print_models(unprinted_designs, completed_models):
     Simulate printing each design, until none are left.
     Move each design to completed_models after printing.
     """
-    while unprinted_designs:
+    while unprinted_designs: # list가 empty가 아니면 true
         current_design = unprinted_designs.pop()
         print(f"Printing model: {current_design}")
         completed_models.append(current_design)
