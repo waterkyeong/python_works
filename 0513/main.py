@@ -344,8 +344,18 @@ else:
     
 # 5-7
 
-favor_fruits = ['apple','banana','pear'] # ============================================================마저 풀기
+favorite_fruits = ['apple','banana','pear'] 
 
+if 'apple' in favorite_fruits:
+    print('u really luv apple!')
+if 'banana' in favorite_fruits:
+    print('u really luv banana!')
+if 'pear' in favorite_fruits:
+    print('u really luv pear!')
+if 'mango' in favorite_fruits:
+    print('u really luv mango!')
+if 'strawberry' in favorite_fruits:
+    print('u really luv strawberry!')
 
 
 # ==============================================================================================
@@ -371,5 +381,22 @@ name = []
 if name:
     print('u shoud need user')
 
-# 5-10 ==================================================================== 마저 풀기
+# 5-10 
 
+current_users = ['Kim','Park','Choi','Lee','Seo']
+new_users = ['kim','hong','jason','lee','jane']
+
+for i in new_users:
+    if i in current_users:
+        print('plz write another name')
+    else: 
+        print('u can use this name')
+
+
+current_users_lower = [i.lower() for i in current_users]
+
+for i in new_users:
+    if i.lower() in current_users_lower:
+        print(f'{i} is already in our web')
+    else:
+        print(f'{i} is avaliable!')
