@@ -30,16 +30,16 @@
 
 # 7-5
 
-a = True
-while a:
-    age = int(input('how old are u?: '))
-    if age < 3:
-        print('under 3 is free')
-        continue
-    elif 3<= age < 12:
-        print('3-12 is 10 box')
-        continue
-    else:
-        print('over 12 is 15 box')
-        continue
+
+# while True:
+#     age = int(input('how old are u?: '))
+#     if age < 3:
+#         print('under 3 is free')
+#         continue
+#     elif 3<= age < 12:
+#         print('3-12 is 10 box')
+#         continue
+#     else:
+#         print('over 12 is 15 box')
+#         continue
     
