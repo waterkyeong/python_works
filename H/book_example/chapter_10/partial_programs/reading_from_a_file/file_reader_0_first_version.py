@@ -1,6 +1,15 @@
 from pathlib import Path
+import os
+print(os.getcwd()) #현재 작업 디렉토리 확인
+new_pi_digits = "H/book_example/chapter_10/partial_programs/reading_from_a_file" # 이동할 디렉토리 경로 설정 설정할때 명심할것 - "폴더"로만 이동가능! 파일을 읽진 않는다.
+os.chdir(new_pi_digits) #디렉토리 변경
+print(os.getcwd()) # 바뀐 디렉토리 확인
+# 이러한 과정을 거치는 이유는 vscode는 최근에 연 폴더에서 파일을 찾기때문. 즉 난 python_works를 제일 최근에 열어서 거기서 여기까지 경로를 설정해주는것!
 
 
 path = Path('pi_digits.txt')
 contents = path.read_text()
-print(contents)
+contents = contents.rstrip().lstrip()
+lines = contents.splitlines()
+for line in lines:
+    print(f'각 줄은 = {line}')

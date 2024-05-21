@@ -1,0 +1,2 @@
+path 객체를 사용한 쓰기Adding a new line.
+Appending another line.
