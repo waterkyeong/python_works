@@ -17,10 +17,11 @@
 
 a =[]
 for i in range(5):
-    b=list(map(str,input().split()))
+    b=input()
     a.append(b)
 print(a)
-for j in range(len(a[j])):
-    for i in range(len(a)):
-        c = j[i+1]
-        print(c,end='')
+
+for j in range(15):
+    for i in range(5):
+       if j < len(a[i]):   
+        print(a[i][j],end='')

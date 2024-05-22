@@ -41,5 +41,48 @@
 #         continue
 #     else:
 #         print('over 12 is 15 box')
-#         continue
+#         continue 
+
+# 7-8
+sandwich_orders = ['tuna', 'club', 'turky']
+finished_sandwiches = []
+
+for i in sandwich_orders:
+    print(f'made {i.title()} sandwich')
+    finished_sandwiches.append(i)
+print(f'congrathuration! u made {finished_sandwiches} sandwiches!')
+
+# 7-9
+sandwich_orders = ['tuna', 'club', 'turky']
+sandwich_orders.append('pastrami')
+sandwich_orders.append('pastrami')
+sandwich_orders.append('pastrami')
+
+print('now we all used pastrami')
+while 'pastrami' in sandwich_orders:
+    sandwich_orders.remove('pastrami')
+
+# for i in sandwich_orders:
+#     print(f'made {i.title()} sandwich')
+#     finished_sandwiches.append(i)
+while sandwich_orders:
+    made_sandwich = sandwich_orders.pop()
+    print(f'now u make {made_sandwich}')
+    finished_sandwiches.append(made_sandwich)
+
+print(f'congrathuration! u made {finished_sandwiches} sandwiches!')
+
+
+# 7-10
+poll ={}
+a=True
+while a:
+    name = input('plz put ur name : ')
+    place = input('If you could visit one place in the world, where would you go? :')
+    poll[name] = place
+    finish = input('will another person respond? (respond y or n) : ')
+    if finish == 'n':
+        a = False
     
+for name, place in poll.items():
+    print(f'{name} want to visit {place}.')
