@@ -15,13 +15,20 @@
 # print(max_a)
 # print(r, c, end=' ')
 
-a =[]
-for i in range(5):
-    b=input()
-    a.append(b)
-print(a)
+# a =[]
+# for i in range(5):
+#     b=input()
+#     a.append(b)
+# print(a)
 
-for j in range(15):
-    for i in range(5):
-       if j < len(a[i]):   
-        print(a[i][j],end='')
+# for j in range(15):
+#     for i in range(5):
+#        if j < len(a[i]):   
+#         print(a[i][j],end='')
+import math
+day, nt, v = map(int,input().split())
+a = day - nt
+if a == v :
+    print(1)
+else:
+    print(math.ceil((v-day)/a)+1)
